@@ -1,10 +1,13 @@
 # sat6CompareHostPackages
-Given two hosts, show the package differences between them.
+In Satellite 5 was pretty easy by interface API realize downgrade pkgs but Satellite 6 isn't able to do that by API 
 
+So, Using this script it's possible rollback pkgs between hosts by python script trough CLI.
+
+Given two hosts, show the package differences between them.
 
 ## Usage
 
-~~~
+```
 ↪ ./sat6CompareHostPackages.py -l admin \
        -s satellite.example.com \
        --source-host auth01.example.com \
@@ -25,4 +28,5 @@ There are 3 packages that differ from auth02.example.com -> auth01.example.com
 	openssh-6.6.1p1-31.el7.x86_64
 	openssh-clients-6.6.1p1-31.el7.x86_64
 	openssh-server-6.6.1p1-31.el7.x86_64
-~~~
+```
+
